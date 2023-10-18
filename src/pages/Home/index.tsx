@@ -12,12 +12,6 @@ import { columns, users } from "../../utils/data";
 
 import './home.css';
 
-const statusColorMap = {
-	active: "success",
-	paused: "danger",
-	vacation: "warning",
-};
-
 const Home = () => {
 	const navigate = useNavigate();
 	const renderCell = React.useCallback((user: any, columnKey: any) => {
@@ -43,8 +37,8 @@ const Home = () => {
 				);
 			case "status":
 				return (
-					<Chip className="capitalize" color={statusColorMap[user.status]} size="sm" variant="flat">
-						{cellValue === 'active' ? 'Completo' : cellValue === 'vacation' ? 'Pendiente' : 'Cancelado'}
+					<Chip className="capitalize" color={user.status} size="sm" variant="flat">
+						{cellValue === 'success' ? 'Completo' : cellValue === 'warning' ? 'Pendiente' : 'Cancelado'}
 					</Chip>
 				);
 			case "actions":
