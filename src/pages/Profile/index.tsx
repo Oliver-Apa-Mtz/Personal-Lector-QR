@@ -36,7 +36,7 @@ const Profile = () => {
 	const getUserById = (id: number) => {
 		let user = users.find((user: any) => user.id === id);
 		setUserData(user);
-		setProfileUrl(`/profile/${id}`)
+		setProfileUrl(`https://personal-lector-qr.vercel.app/profile/${id}`)
 	};
 
 	return (
