@@ -1,0 +1,23 @@
+.cardItem{
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+@media(max-width:767px){
+	.cardItem{
+		box-shadow: none !important;
+		background-color: transparent;
+	}
+	.cardItem__body{
+		width: 100%;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		text-align: center;
+	}
+	.cardItem__info, .cardItem__text{
+		width: 100%;
+	}
+	.qrcode{
+		margin: 0 auto;
+	}
+}

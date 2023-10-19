@@ -4,3 +4,6 @@
 .header__logo{
 	height:50px;
 }
+.navbar__buttom{
+	justify-content: flex-end !important;
+}

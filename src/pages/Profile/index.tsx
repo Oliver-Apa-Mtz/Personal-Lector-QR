@@ -44,7 +44,7 @@ const Profile = () => {
 			{
 				<div className="container">
 					<div>
-						<Card className="">
+						<Card className="cardItem">
 							<CardHeader className="justify-between p-5">
 								<div className="flex gap-5">
 									<Avatar isBordered radius="full" size="lg" src={userData.avatar} />
@@ -61,38 +61,38 @@ const Profile = () => {
 								<p>
 									Frontend developer and UI/UX enthusiast. Join me on this coding adventure!
 								</p>
-								<div className="flex gap-2 mt-4">
-									<p className="font-bold text-default-700 text-large">Folio:</p>
-									<p className=" text-default-400 text-large">{userData.folio}</p>
+								<div className="cardItem__body flex gap-2 mt-4">
+									<p className="cardItem__info font-bold text-default-700 text-large">Folio:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.folio}</p>
 								</div>
-								<div className="flex gap-2 mt-2">
-									<p className="font-bold text-default-700 text-large">CURP:</p>
-									<p className=" text-default-400 text-large">{userData.curp}</p>
+								<div className="cardItem__body flex gap-2 mt-2">
+									<p className="cardItem__info font-bold text-default-700 text-large">CURP:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.curp}</p>
 								</div>
-								<div className="flex gap-2 mt-2">
-									<p className="font-bold text-default-700 text-large">Fecha de impartición:</p>
-									<p className=" text-default-400 text-large">{userData.fecha}</p>
+								<div className="cardItem__body flex gap-2 mt-2">
+									<p className="cardItem__info font-bold text-default-700 text-large">Fecha de impartición:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.fecha}</p>
 								</div>
-								<div className="flex gap-2 mt-2">
-									<p className="font-bold text-default-700 text-large">Vigencia:</p>
-									<p className=" text-default-400 text-large">{userData.vigencia}</p>
+								<div className="cardItem__body flex gap-2 mt-2">
+									<p className="cardItem__info font-bold text-default-700 text-large">Vigencia:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.vigencia}</p>
 								</div>
-								<div className="flex gap-2 mt-2">
-									<p className="font-bold text-default-700 text-large">Curso:</p>
-									<p className=" text-default-400 text-large">{userData.curso}</p>
+								<div className="cardItem__body flex gap-2 mt-2">
+									<p className="cardItem__info font-bold text-default-700 text-large">Curso:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.curso}</p>
 								</div>
-								<div className="flex gap-2 mt-2">
-									<p className="font-bold text-default-700 text-large">Empresa:</p>
-									<p className=" text-default-400 text-large">{userData.empresa}</p>
+								<div className="cardItem__body flex gap-2 mt-2">
+									<p className="cardItem__info font-bold text-default-700 text-large">Empresa:</p>
+									<p className="cardItem__text text-default-400 text-large">{userData.empresa}</p>
 								</div>
-								<div className="mt-5 p-5">
-									<QRCode value={profileUrl} />
+								<div className="cardItem__body mt-5 p-5">
+									<QRCode value={profileUrl} className="qrcode" />
 								</div>
 							</CardBody>
 							<CardFooter className="gap-3 p-5">
-								<div className="flex gap-2">
-									<p className="font-semibold text-default-700 text-medium">Email:</p>
-									<p className=" text-default-400 text-medium">{userData.email}</p>
+								<div className="cardItem__body flex gap-2">
+									<p className="cardItem__info font-semibold text-default-700 text-medium">Email:</p>
+									<p className="cardItem__text text-default-400 text-medium">{userData.email}</p>
 								</div>
 							</CardFooter>
 						</Card>

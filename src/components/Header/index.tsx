@@ -12,8 +12,7 @@ const Header = () => {
 				<img className="header__logo" src={Logo} alt="" />
 				<p className="font-bold text-inherit">PROYECTO</p>
 			</NavbarBrand>
-			<NavbarContent className="hidden sm:flex gap-4" justify="center"></NavbarContent>
-			<NavbarContent justify="end">
+			<NavbarContent className="navbar__buttom">
 				<NavbarItem>
 					<Button as={Link} color="primary" href="#" variant="flat">
 						Registrar
