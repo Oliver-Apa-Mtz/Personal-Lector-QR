@@ -69,7 +69,7 @@ const Home = () => {
 	return (
 		<Layout>
 			{
-				<div className="container table">
+				<div className="container tabla">
 					<Table aria-label="Example table with custom cells">
 						<TableHeader columns={columns}>
 							{(column: any) => (

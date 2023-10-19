@@ -1,10 +1,15 @@
 .container{
-	width: 100%;
+	width: 100vw;
 	margin: 40px auto;
+	overflow-x: scroll;
+}
+.container__table{
+	width: 100%;
+	
 }
 
 @media(max-width:767px) {
-	.table > div > div {
+	.tabla > div > div {
 		box-shadow: none !important;
 		background-color: transparent;
 	}
